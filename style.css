@@ -1,0 +1,141 @@
+/* set variable https://www.w3schools.com/css/css3_variables.asp */
+:root {
+    --grey: #cfd8dc;
+    --border: #7478e0;
+    --content: #9ddef9;
+    --link: #2E3192;
+}
+
+/* reset default browser setting */
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--grey);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header { 
+    height: 70px;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.header .menu-utama {
+    margin-top: 3px;
+    list-style: none;
+}
+
+.header .menu-utama li {
+    float: left;
+    padding: 8px 20px;
+    border: solid 1px var(--border);
+}
+
+.header .menu-utama li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header form {
+    margin: 0 10px 0 50px;
+    float: right;
+    padding: 7px;
+}
+
+.header form input {
+    border: none;
+    height: 20px;
+    margin-right: 50px;
+}
+
+.daftar-content {
+    width: 670px;
+    float: left;
+}
+
+.daftar-content .content {
+    background-color: var(--content);
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.daftar-content .content img {
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.daftar-content .content .info {
+    margin-left: 170px;
+}
+
+.daftar-content .content .info strong {
+    color: black;
+    background-color: var(--grey);
+    padding: 3px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.daftar-content .content .info a {
+    text-align: right;
+    color: var(--link);
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.sidebar {
+    width: 470px;
+    float: right;
+}
+
+.sidebar h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.sidebar p {
+    line-height: 20px;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    margin-left: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+.footer {
+    /* because of previous tag using float (left), 
+    we use clear to make footer out of that rule */
+    clear: both;
+    text-align: center;
+    background-color: var(--content);
+    margin: 20px 0;
+    padding: 20px 0;
+}
