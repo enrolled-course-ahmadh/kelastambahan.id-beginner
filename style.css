@@ -8,7 +8,7 @@
 
 /* reset default browser setting */
 * {
-    margin: 0 auto;
+    margin: 0 auto; /* element will be centered by default */
     padding: 0;
 }
 
@@ -132,7 +132,7 @@ body {
 
 .footer {
     /* because of previous tag using float (left), 
-    we use clear to make footer out of that rule */
+    we use `clear` to make footer out of that rule */
     clear: both;
     text-align: center;
     background-color: var(--content);
