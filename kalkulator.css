@@ -1,0 +1,75 @@
+/* reset default browser setting */
+* {
+    margin: 0 auto; /* element will be centered by default */
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 300px;
+    background-color: lightgray;
+    margin: 50px auto 0 auto;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#display {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 7px 5px;
+    text-align: right;
+    outline: none;
+    color: darkcyan;
+}
+
+.tombol-tombol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tombol-tombol > .tombol {
+    width: 25%;
+    height: 70px;
+    flex-grow: 0;
+    font-size: 20px;
+    color: darkcyan;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    text-align: center;
+    align-items: center;
+    padding-top: 1.25em;
+    box-sizing: border-box;
+}
+
+.tombol:nth-child(4n+1) {
+    border-left: 1px solid gray;
+}
+
+.tombol:hover {
+    cursor: pointer;
+    background-color: gray !important;
+    color: white !important;
+}
+
+#nol {
+    flex-grow: 1;
+}
+
+#hitung {
+    background-color: black;
+    color: pink;
+}
+
+.tombol.operator {
+    background-color: goldenrod;
+}
